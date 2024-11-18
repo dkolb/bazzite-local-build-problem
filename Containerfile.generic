@@ -1,0 +1,6 @@
+ARG image
+ARG tag
+FROM ghcr.io/ublue-os/${image}:${tag}
+RUN \
+  rpm-ostree install hardinfo2 && \
+  ostree container commit
