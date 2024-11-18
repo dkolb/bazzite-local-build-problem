@@ -1,0 +1,4 @@
+FROM ghcr.io/ublue-os/silverblue-main:41
+RUN \
+  rpm-ostree install hardinfo2 && \
+  ostree container commit

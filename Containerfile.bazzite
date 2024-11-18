@@ -1,0 +1,4 @@
+FROM ghcr.io/ublue-os/bazzite-gnome:stable
+RUN \
+  rpm-ostree install hardinfo2 && \
+  ostree container commit
